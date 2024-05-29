@@ -136,14 +136,17 @@ counter = 0
 song = songs["L's theme"]
 
 def on_press(key):
-	global counter
-	try:
-		notes[song[counter]].play() 
-	except AttributeError:
-		pass
-	counter += 1
-	if counter == len(song):
-		counter = 0
+    global counter
+    try:
+        if counter >= 1:
+            notes[song[counter-1]].stop()
+                                
+        notes[song[counter]].play() 
+    except AttributeError:
+        pass
+    counter += 1
+    if counter == len(song):
+        counter = 0
 
 # Create a listener for keyboard events
 with keyboard.Listener(on_press=on_press) as listener:
