@@ -18,6 +18,11 @@ make a venv if you so please.
 
 write your own songs and add them to songs.py as KV pairs.
 
+## Extension
+* track WPM and choose song based on rounding
+* continuous song playing/playlist
+* automatic conversion of songs into raw notes
+
 
 ### devnotes 
 * keylogger to register keypresses

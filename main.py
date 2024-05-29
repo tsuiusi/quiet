@@ -1,4 +1,5 @@
 from pynput import keyboard
+import time
 import pygame
 from songs import songs
 
@@ -128,12 +129,13 @@ notes = {
     'Bb7': pygame.mixer.Sound('samples/Bb7.mp3'),
     'A#7': pygame.mixer.Sound('samples/Bb7.mp3'),
     'B7': pygame.mixer.Sound('samples/B7.mp3'),
-    'C8': pygame.mixer.Sound('samples/C8.mp3')
+    'C8': pygame.mixer.Sound('samples/C8.mp3'),
+    ' ': pygame.mixer.Sound('samples/silence.mp3')
 }
 
 counter = 0
 
-song = songs["L's theme"]
+song = songs["michishirube"]
 
 def on_press(key):
     global counter
