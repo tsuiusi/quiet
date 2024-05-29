@@ -135,7 +135,7 @@ notes = {
 
 counter = 0
 
-song = songs["michishirube"]
+song = songs["L's theme"]
 
 def on_press(key):
     global counter
